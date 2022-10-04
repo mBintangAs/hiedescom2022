@@ -1,0 +1,441 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: #008379;
+    transition: 0.3s;
+}
+
+header .logo {
+    margin-top: 5px;
+    position: relative;
+    margin-left: 25px;
+    justify-content: center;
+    align-items: center;
+} 
+
+header .logo a {
+    color: #000;
+    font-weight: bold;
+} 
+
+header ul li {
+    position: relative;
+    padding: 0 20px 0 20px;
+    display: inline-block;
+}
+
+header .contact {
+    position: relative;
+    padding: 0 20px 0 25px;
+    display: inline-block;
+}
+
+header .contact .btnContact {
+    background: #fff;
+    border: 0;
+    padding: 7px 13px 7px 13px;
+    border-radius: 25px;
+    color: #008379;
+}
+
+header.sticky .contact .btnContact {
+    background: #008379;
+    color: #fff;
+}
+
+header ul li a {
+    color: #fff;
+    transition: 0.2s;
+}
+
+header ul li a:hover {
+    transition: 0.25s;
+    color: yellow;
+}
+
+header.sticky ul li a{
+    color: #000;
+    transition: 0.2s;
+}
+
+header.sticky ul li a:hover {
+    color: #008379;
+    transition: 0.25s;
+}
+
+.active {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 8px;
+}
+
+header.sticky .active {
+    color: #008379;
+    border-bottom: 2px solid #008379;
+    padding-bottom: 8px;
+}
+
+header.sticky {
+    transition: 0.3s;
+    background: #fff;
+    position: fixed;
+    width: 100%;
+    border-top: 4px solid #008379;
+    z-index: 10;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+
+/* main stylesheet */
+.main {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    background: #008379;
+}
+
+.bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.main .content,
+.main .imgBx {
+    position: relative;
+    top: -3em;
+}
+
+.main .content {
+    font-size: 20px;
+    width: 45%;
+    padding: 28px;
+}
+
+.main .content h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.main .content h4 {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.main .content p {
+    font-size: 15px;
+}
+
+.main .content .btnContent {
+    background: #fff;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.25s;
+    font-size: 15px;
+}
+
+.main .content .btnContent-transparent {
+    background: transparent;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 7px;
+    font-size: 15px;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    transition: 0.25s;
+}
+
+.main .content .btnContent-transparent:hover {
+    background: #fff;
+    color: #000;
+    border: 1px solid #fff;
+}
+
+.main .content .btnContent:hover
+{
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.main .imgBx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 75vh;
+}
+
+.main .imgBx img {
+    width: 100%; 
+    height: 100%;
+    object-fit: contain;
+}
+
+.produk {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.produk .title {
+    margin-top: 15px;
+}
+
+.produk .cardProduk {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+}
+
+.produk .cardProduk .cardProduk-item {
+    width: 30%;
+    padding: 10px;
+    border-radius: 8px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.produk .cardProduk .cardProduk-item .imgBx img {
+    width: 100%;
+    height: 100%;
+    background: blue;
+}
+
+.produk .cardProduk .cardProduk-item .checkout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.produk .cardProduk .cardProduk-item .checkout .beli {
+    background: #008379;
+    border: 0;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #fff;
+}
+.banner {
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .cardBanner {
+    width: 100%;
+    background: #008379;
+    border-radius: 8px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.banner .cardBanner .cardBanner-content {
+    width: 60%;
+    color: #fff;
+}
+
+.banner .cardBanner .cardBanner-button {
+    background: beige;
+    padding: 10px;
+    border: 0;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.banner .cardBanner .cardBanner-img {
+    width: 50%;
+}
+
+.banner .cardBanner .cardBanner-img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 80px;
+    padding-right: 80px;
+    background-image: radial-gradient(circle at 12% 55%,rgba(33,150,243,.15),hsla(0,0%,100%,0) 25%),radial-gradient(circle at 85% 33%,rgba(108,99,255,.175),hsla(0,0%,100%,0)   25%)
+}
+
+.about .cardAbout {
+    width: 100%;
+    border-radius: 8px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about .cardAbout .cardAbout-img {
+    width: 40%;
+}
+
+.about .cardAbout .cardAbout-img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.about .cardAbout .cardAbout-content {
+    width: 50%;
+}
+
+.about .cardAbout .cardAbout-button {
+    background: #008379;
+    color: #fff;
+    padding: 10px;
+    display: inline-block;
+    border: 0;
+    margin-top: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+@media (max-width: 895px) {
+    header ul li a,
+    header .contact {
+        display: none;
+    }
+    header {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header .logo {
+        position: absolute;
+    }
+
+    .main {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .main .content,
+    .main .imgBx {
+        position: relative;
+        top: 0.3em;
+    }
+    .main .content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .main .content h1 {
+        font-size: 18.5px;
+    }
+
+    .main .content p {
+        font-size: 13px;
+    }
+
+    .main .content h4 {
+        font-size: 16px;
+    }
+
+    .main .imgBx {
+        width: 80%;
+    }
+
+    .produk {
+        padding: 10px;
+    }
+    .produk .title {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .produk .tagline {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .produk .cardProduk {
+        width: 100%;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .produk .cardProduk .cardProduk-item {
+        width: 100%;
+    }
+
+    .banner {
+        background: red;
+        padding: 0;
+    }
+    .banner .cardBanner {
+        border-radius: 0;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .banner .cardBanner .cardBanner-content {
+        margin-top: 40px;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .banner .cardBanner-content h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .banner .cardBanner-content .cardBanner-button {
+        margin-top: 10px;
+        font-size: 15px;
+    }
+
+    .banner .cardBanner .cardBanner-img {
+        width: 100%;
+    }
+
+    .produk .title {
+        width: 100%;
+    }
+
+    .about {
+        padding: 0;
+    }
+    .about .cardAbout {
+        flex-direction: column-reverse;
+        width: 100%;
+        padding: 30px;
+    }
+
+    .about .cardAbout .cardAbout-content {
+        width: 100%;
+        margin-bottom: 30px;
+        text-align: justify;
+    }
+    .about .cardAbout .cardAbout-img {
+        width: 100%;
+    }
+
+}
