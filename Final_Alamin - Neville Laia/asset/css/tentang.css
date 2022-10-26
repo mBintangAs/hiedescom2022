@@ -1,0 +1,174 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+header .logo {
+    margin-top: 5px;
+    position: relative;
+    margin-left: 25px;
+    justify-content: center;
+    align-items: center;
+} 
+
+header .logo a {
+    color: #000;
+    font-weight: bold;
+} 
+
+header ul li {
+    position: relative;
+    padding: 0 20px 0 20px;
+    display: inline-block;
+}
+
+header .contact {
+    position: relative;
+    padding: 0 20px 0 25px;
+    display: inline-block;
+}
+
+header .contact .btnContact {
+    background: #008379;
+    border: 0;
+    padding: 7px 13px 7px 13px;
+    border-radius: 25px;
+    color: #fff;
+}
+
+header ul li a {
+    color: #000;
+    transition: 0.2s;
+}
+
+header ul li a:hover {
+    transition: 0.25s;
+    color: #008379;
+}
+
+header.sticky ul li a{
+    color: #000;
+    transition: 0.2s;
+}
+
+header.sticky ul li a:hover {
+    color: #008379;
+    transition: 0.25s;
+}
+
+.active {
+    color: #008379;
+    border-bottom: 2px solid #008379;
+    padding-bottom: 8px;
+}
+
+header.sticky .active {
+    color: #008379;
+    border-bottom: 2px solid #008379;
+    padding-bottom: 8px;
+}
+
+header.sticky {
+    background: #fff;
+    position: fixed;
+    width: 100%;
+    border-top: 4px solid #008379;
+    z-index: 10;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #000;
+}
+
+.main .bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.main .btnMain {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px;
+    background: #008379;
+    border-radius: 8px;
+    border: 0;
+    color: #fff;
+}
+
+.main .content h1 {
+    font-size: 45px;
+}
+
+.main .content h2 {
+    font-size: 30px;
+}
+
+.formasi {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+}
+
+.formasi .card {
+    padding: 10px;
+    width: 25%;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-top: 4px solid #008379;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    flex-direction: column;
+}
+
+.formasi .card .imgBx img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+}
+
+@media (max-width: 895px) {
+    header ul li a,
+    header .contact {
+        display: none;
+    }
+    header {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header .logo {
+        position: absolute;
+    }
+
+    .main .content {
+        position: relative;
+        top: -4em;
+        padding: 0;
+    }
+    .main .content h1 {
+        font-size: 21px;
+    }
+    .formasi {
+        flex-direction: column;
+        gap: 25px;
+    }
+    .formasi .card {
+        width: 95%;
+    }
+}
